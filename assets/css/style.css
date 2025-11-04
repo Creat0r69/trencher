@@ -492,7 +492,6 @@ header.fixed .nav-top-wrapper {
 .member-img {
     background: #fff;
     border-radius: 16px;
-    border: #BB5D02 1px solid;
     margin: 0 auto;
     transition: .2s linear;
     display: flex;
