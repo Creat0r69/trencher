@@ -13,6 +13,51 @@
           href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Lemon&amp;display=swap">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <style>
+        .middle-buttons {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center; /* centers horizontally */
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .full-btn {
+            width: 80vw; /* 👈 80% of the viewport width */
+            height: 17vh; /* half of screen height */
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: 6px solid transparent;
+            outline: none;
+            transition: all 0.3s ease;
+            border-radius: 40px; /* 👈 Rounded corners */
+
+        }
+
+        /* Red button with white stroke */
+        .red-btn {
+            background: #c41c1b;
+            color: #fff;
+            border-color: #fff;
+        }
+
+        /* White button with red stroke */
+        .white-btn {
+            background: #fff;
+            color: #c41c1b;
+            border-color: #c41c1b;
+        }
+
+        /* Hover effects */
+        .full-btn:hover {
+            transform: scale(1.02);
+            filter: brightness(1.15);
+        }
+
+    </style>
 </head>
 
 <body>
@@ -21,7 +66,7 @@
         <div class="container">
             <div class="nav-top d-flex align-items-center justify-content-between ">
                 <ul class="social-icon d-flex align-items-center gap-3">
-                    <li><a href="https://x.com/"><img src="assets/images/icon-twitter.png" alt=""></a></li>
+                    <li><a href="https://x.com/i/communities/1986118519281574055"><img src="assets/images/icon-twitter.png" alt=""></a></li>
 
                 </ul>
                 <button class="primary-btn"
@@ -45,7 +90,7 @@
                         <a class="nav-link" href="#ourTeam">Our Memes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Make PFP</a>
+                        <a class="nav-link" href="https://memes.unstabletrencher.com">Make PFP</a>
                     </li>
                 </ul>
             </div>
@@ -67,13 +112,23 @@
                     class="text-center mt-4 ca">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</h3>
                 <h3 style="color: #c41c1b; text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;"
                     class="text-center mt-4 hero-sub-title"></h3>
-                <button onclick="window.open('https://trenchermaker1.vercel.app', '_blank')"
-                        class="primary-btn secondary-btn text-center">
-                    UNSTABLE TRENCHER HAT
-                </button>
+
             </div>
         </div>
     </section>
+    <section class="middle-buttons">
+        <button onclick="window.open('https://memes.unstabletrencher.com', '_blank')"
+                class="primary-btn secondary-btn full-btn red-btn">
+            Generate a custom PFP
+        </button>
+
+        <button onclick="window.open('https://x.com/i/communities/1986118519281574055', '_blank')"
+                class="primary-btn secondary-btn full-btn white-btn">
+            Join the cult
+        </button>
+    </section>
+
+
     <section class="buying-section-main" id="HowToBuy">
         <div class="container">
             <div class="row gy-4">
@@ -209,7 +264,7 @@
                     <h5 class="footer-title text-center text-lg-start text-light ">Follow us</h5>
                     <ul
                             class="footer-social-links-grp social-icon d-flex align-items-center gap-3 justify-content-center justify-content-lg-start">
-                        <li><a href="https://x.com/"><img src="assets/images/icon-twitter.png" alt=""></a>
+                        <li><a href="https://x.com/i/communities/1986118519281574055"><img src="assets/images/icon-twitter.png" alt=""></a>
                         </li>
                     </ul>
                     <p class="copy-right-text text-center text-lg-start text-light">© 2025 $unstable</p>
